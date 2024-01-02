@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+             background:#FFCCCC;
+         }
+         .td{
+             font-size: 30px;
+         }
+         table{
+             border: 1px solid red;
+             color:RED;
+             background-color:  #66FFFF;
+           
+         }
+         th, td {  
+             
+     padding: 10px;  
+         }
+         
+     </style>
+</head>
+<body>
+    <h1 align="center">DANH SÁCH SINH VIÊN</h1>
+    <table align="center">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Họ Tên</th>
+                <th>Tuổi</th>
+                <th>Địa chỉ</th>
+                <th>Ngày sinh</th>
+               
+                <th>Hình Ảnh</th>
+                <th>Ngày giờ</th>
+               <th>Chức Năng</th>
+            </tr>
+     </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+
+    
+        <h2 align="center">THÔNG TIN SINH VIÊN</h2>
+        <table align="center">
+            <tr>
+                <th>Họ tên</th>
+                <td> 
+                    <input type="text" name="Name"></td>
+            </tr>
+    
+            <tr>
+                <th>Tuổi</th>
+                <td> <input type="text" name="Age"></td>
+            </tr>
+    
+            <tr>
+                <th>Địa chỉ</th>
+               <td> <input type="text" name="Address"></td>
+            </tr>
+    
+            <tr>
+                <th>Ngày sinh</th>
+                <td><input type="date" name="Ngaysinh"></td>
+            </tr>
+    
+           
+            <tr>
+                <th>
+                    Hình ảnh
+                </th>
+                <td>
+                    <input type="file" name="Hinhanh">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Ngày giờ
+                </th>
+                <td>
+                    <input type="date" name="Ngaygio">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button id="buttonSua" type="button" >Sửa</button>
+                    <button id="buttonAdd" type="button" onclick="Add()">Thêm</button></td>
+            </tr>
+        </table>
+    <script src="./Xuly.js"></script>
+</body>
+</html>
